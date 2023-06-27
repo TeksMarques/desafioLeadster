@@ -1,0 +1,26 @@
+{
+  "name": "desafioleadster",
+  "version": "1.0.0",
+  "description": "Criação de uma Landing page utilizando NextJs Styled Components",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^13.4.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.2",
+    "@types/react": "^18.2.14",
+    "@types/styled-components": "^5.1.26",
+    "babel-plugin-styled-components": "^2.1.4",
+    "typescript": "^5.1.3"
+  }
+}
