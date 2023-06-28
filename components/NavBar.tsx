@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const NavBar = () => {
   const [botoes, setBotoes] = useState([
@@ -10,7 +10,7 @@ export const NavBar = () => {
     { id: 5, isAlterado: false, text: "Mídia Paga" },
   ]);
 
-  const handleClick = (id) => {
+  const handleClick = (id: number) => {
     setBotoes((prevState) =>
       prevState.map((botao) =>
         botao.id === id ? { ...botao, isAlterado: !botao.isAlterado } : botao
@@ -47,7 +47,7 @@ export const NavBar = () => {
 };
 
 export const NavBarContainer = styled.div`
-  width: 90%;
+  width: 100vw;
   height: 80px;
 
   display: flex;

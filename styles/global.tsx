@@ -140,6 +140,49 @@ const GlobalStyle = createGlobalStyle`
         height: auto;
     }
     
+    .footer__logo {
+        width: 200px;
+        height: auto;
+        margin-top: 20px;        
+        padding: 0;        
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+    }
+
+    .footer__links {
+        text-decoration: none;
+        text-align: center;
+        font-size: 14px;
+        color: #333;
+        font-weight: medium;
+        padding-bottom: 10px;
+    }
+
+    .footer__redes {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #ebeef5;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        color: #333;
+        
+        &:hover {
+            background-color: #2c83fb;
+            color: #fff;
+        }
+  
+    }
+
+    .footer__copy {
+        text-decoration: none;
+        font-size: 11px;
+        color: #089bfe;
+    }
 
 `;
 
