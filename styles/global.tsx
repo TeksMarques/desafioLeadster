@@ -86,6 +86,26 @@ const GlobalStyle = createGlobalStyle`
         font-weight: 900;
     }
 
+    .nav__link {
+        font-size: 13px;        
+        margin-right: 8px;
+        border: 1px solid #333;
+        border-radius: 30px;
+        padding: 5px 15px;
+        color: #333;
+
+        &:hover {
+            color: #2c83fb;
+            border: 1px solid #2c83fb;
+        }
+    }
+
+    .nav__bold {
+        font-weight: 900;
+        font-size: 13px;
+        margin-right: 8px;
+    }
+
 `;
 
 export default GlobalStyle;
