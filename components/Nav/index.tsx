@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { ButtonFilter, Line, NavBarContainer, NavButton, NavContainer, NavFilter, NavWrapper } from "./style";
 
 
-export const NavBar = () => {
+const NavBar = () => {
   const [botoes, setBotoes] = useState([
     { id: 1, isAlterado: false, text: "Agências" },
     { id: 2, isAlterado: false, text: "Chatbot" },
@@ -46,3 +46,5 @@ export const NavBar = () => {
     </NavBarContainer>
   );
 };
+
+export default NavBar;

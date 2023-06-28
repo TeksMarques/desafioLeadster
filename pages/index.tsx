@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Header from '../components/Header/index';
-import { NavBar } from '../components/Nav/index';
+import NavBar  from '../components/Nav/index';
 import SectionInfos from '../components/Section/index';
 import Footer from '../components/Footer/index';
 
