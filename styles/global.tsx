@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
     * {
@@ -105,6 +105,41 @@ const GlobalStyle = createGlobalStyle`
         font-size: 13px;
         margin-right: 8px;
     }
+
+    .image__comparativos {
+        width: 580px;
+        height: auto;
+
+       padding-top: 2rem;
+       margin-left: 10rem;
+       z-index: 1;
+    }
+
+    .image_grafico {
+        position: absolute;
+        top: 120px;
+        left: -80px;
+        background-color: #e1f3fe;
+        height: 900px;
+        width: 670px;
+        transform: rotate(-43deg);
+        border-radius: 80px;
+        z-index: 0;
+        opacity: 1;       
+    }
+
+    .image__selo {
+        width: 135px;
+        height: auto;
+        margin-left: 20px;
+    }
+
+    .image__rating {
+        margin-left: 10px;
+        width: 72px;
+        height: auto;
+    }
+    
 
 `;
 

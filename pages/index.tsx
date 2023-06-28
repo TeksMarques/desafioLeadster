@@ -2,12 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import Header from '../components/Header';
 import { NavBar } from '../components/NavBar';
+import SectionInfos from '../components/SectionInfos';
 
 const LandingPage = () => {
     return (
         <PageContainer>            
             <Header />
-            <NavBar />  
+            <NavBar />
+            <SectionInfos /> 
         </PageContainer>
       )
     
