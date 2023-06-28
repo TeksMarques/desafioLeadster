@@ -1,23 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
-
-const Title = styled.h1`
-  font-size: 24px;
-  color: #333;
-`;
-
-const Container = styled.div`
-  padding: 16px;
-  background-color: #f5f5f5;
-`;
+import Header from '../components/Header';
 
 const LandingPage = () => {
-  return (
-    <Container>
-      <Title>Bem-vindo à Landing Page!</Title>
-      <p>Esta é a página inicial do seu site.</p>
-    </Container>
-  );
-};
+    return (
+        <PageContainer>            
+            <Header />    
+        </PageContainer>
+      )
+    
+}; 
 
 export default LandingPage;
+
+export const PageContainer = styled.div`
+    widht: 100vw;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`
+
+
