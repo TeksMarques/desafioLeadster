@@ -4,7 +4,21 @@ import Image from "next/image";
 import Link from "next/link";
 import { ImLinkedin2, ImFacebook } from "react-icons/im";
 import { BsInstagram } from "react-icons/bs";
-import { FooterContainer, FooterContatos, FooterCopy, FooterHeader, FooterInfo, FooterLinks, FooterMain, FooterSociais, Line, Paragraph, TextContato, TitleContainer, TitleText } from "./styles";
+import {
+  FooterContainer,
+  FooterContatos,
+  FooterCopy,
+  FooterHeader,
+  FooterInfo,
+  FooterLinks,
+  FooterMain,
+  FooterSociais,
+  Line,
+  Paragraph,
+  TextContato,
+  TitleContainer,
+  TitleText,
+} from "./styles";
 
 const Footer = () => {
   return (
@@ -82,31 +96,44 @@ const Footer = () => {
             <TitleText>Siga a Leadster</TitleText>
           </TitleContainer>
           <FooterSociais>
-            <Link className="footer__redes" href="https://www.linkedin.com/company/leadster-platform/" target="blank">
-                <ImLinkedin2 />
+            <Link
+              className="footer__redes"
+              href="https://www.linkedin.com/company/leadster-platform/"
+              target="blank"
+            >
+              <ImLinkedin2 />
             </Link>
-            <Link className="footer__redes" href="https://www.facebook.com/leadsterplatform" target="blank">
-                <ImFacebook />
+            <Link
+              className="footer__redes"
+              href="https://www.facebook.com/leadsterplatform"
+              target="blank"
+            >
+              <ImFacebook />
             </Link>
-            <Link className="footer__redes" href="https://www.instagram.com/leadster.com.br/" target="blank">
-                <BsInstagram />
-            </Link>                        
+            <Link
+              className="footer__redes"
+              href="https://www.instagram.com/leadster.com.br/"
+              target="blank"
+            >
+              <BsInstagram />
+            </Link>
           </FooterSociais>
           <FooterContatos>
-                <TextContato className="footer__links">
-                    <span className="header__bold">Email: </span>
-                    contato@leadster.com.br
-                </TextContato>
-                <TextContato className="footer__links">
-                    <span className="header__bold">Telefone: </span>
-                    (42) 98828-9851
-                </TextContato>
+            <TextContato className="footer__links">
+              <span className="header__bold">Email: </span>
+              contato@leadster.com.br
+            </TextContato>
+            <TextContato className="footer__links">
+              <span className="header__bold">Telefone: </span>
+              (42) 98828-9851
+            </TextContato>
           </FooterContatos>
         </FooterInfo>
       </FooterMain>
       <Line></Line>
       <FooterCopy>
-        <Paragraph>Copyright © 2015 - 2022 Todos os direitos reservados |{"   "}
+        <Paragraph>
+          Copyright © 2015 - 2022 Todos os direitos reservados |{"   "}
           <a
             className="footer__copy"
             href="https://www.leadster.com.br"
@@ -115,13 +142,14 @@ const Footer = () => {
             Leadster{"   "}
           </a>
         </Paragraph>
-        <Paragraph> Rua José Loureiro, 464 - Centro - Curitiba PR - CEP: 80010-000 | Termos
-          de uso |</Paragraph>
-      </FooterCopy>  
+        <Paragraph>
+          {" "}
+          Rua José Loureiro, 464 - Centro - Curitiba PR - CEP: 80010-000 |
+          Termos de uso |
+        </Paragraph>
+      </FooterCopy>
     </FooterContainer>
   );
 };
-
-
 
 export default Footer;

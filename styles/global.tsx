@@ -161,6 +161,14 @@ const GlobalStyle = createGlobalStyle`
         border-radius: 1rem;
     }
 
+    .btn__player {
+        color: #fff;
+        width: 100%;
+        font-size: 9rem;
+        text-align: center;
+        padding-top: 3rem;
+    }
+
     // conteudo da Modal
 
     .dialog__panel {

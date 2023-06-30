@@ -1,6 +1,13 @@
 import React, { useState } from "react";
-import { ButtonFilter, Line, NavBarContainer, NavButton, NavContainer, NavFilter, NavWrapper } from "./style";
-
+import {
+  ButtonFilter,
+  Line,
+  NavBarContainer,
+  NavButton,
+  NavContainer,
+  NavFilter,
+  NavWrapper,
+} from "./style";
 
 const NavBar = () => {
   const [botoes, setBotoes] = useState([
@@ -15,17 +22,17 @@ const NavBar = () => {
 
   const handleClick = (id: number) => {
     setBotoes((prevState) =>
-    prevState.map((botao) => {
-      if (botao.id === id) {
-        return { ...botao, isAlterado: !botao.isAlterado };
-      } else if (botao.id === idClicado && botao.isAlterado) {
-        return { ...botao, isAlterado: false };
-      }
-      return botao;
-    })
-  );
+      prevState.map((botao) => {
+        if (botao.id === id) {
+          return { ...botao, isAlterado: !botao.isAlterado };
+        } else if (botao.id === idClicado && botao.isAlterado) {
+          return { ...botao, isAlterado: false };
+        }
+        return botao;
+      })
+    );
 
-  setIdClicado(id);
+    setIdClicado(id);
   };
 
   return (

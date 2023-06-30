@@ -1,5 +1,15 @@
 import React from "react";
-import { HeaderContainer, HeaderLogo, HeaderMain, HeaderTextBubble, HeaderTextSubTitle, HeaderTitle, HeaderTextTitle, Line, HeaderCTO } from "./styles";
+import {
+  HeaderContainer,
+  HeaderLogo,
+  HeaderMain,
+  HeaderTextBubble,
+  HeaderTextSubTitle,
+  HeaderTitle,
+  HeaderTextTitle,
+  Line,
+  HeaderCTO,
+} from "./styles";
 import Image from "next/image";
 
 const Header = () => {
@@ -12,7 +22,7 @@ const Header = () => {
         <HeaderTextBubble>WEBINARS EXCLUSIVOS</HeaderTextBubble>
         <HeaderTextSubTitle>Menos Conversinha,</HeaderTextSubTitle>
         <HeaderTitle>
-          <HeaderTextTitle >Mais Conversão</HeaderTextTitle>
+          <HeaderTextTitle>Mais Conversão</HeaderTextTitle>
           <Image
             src="/images/asset-header.png"
             alt="logo"
