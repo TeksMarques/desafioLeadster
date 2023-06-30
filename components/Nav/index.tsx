@@ -11,12 +11,21 @@ const NavBar = () => {
     { id: 5, isAlterado: false, text: "Mídia Paga" },
   ]);
 
+  const [idClicado, setIdClicado] = useState(null);
+
   const handleClick = (id: number) => {
     setBotoes((prevState) =>
-      prevState.map((botao) =>
-        botao.id === id ? { ...botao, isAlterado: !botao.isAlterado } : botao
-      )
-    );
+    prevState.map((botao) => {
+      if (botao.id === id) {
+        return { ...botao, isAlterado: !botao.isAlterado };
+      } else if (botao.id === idClicado && botao.isAlterado) {
+        return { ...botao, isAlterado: false };
+      }
+      return botao;
+    })
+  );
+
+  setIdClicado(id);
   };
 
   return (

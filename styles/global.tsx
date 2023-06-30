@@ -127,6 +127,35 @@ const GlobalStyle = createGlobalStyle`
         text-decoration: none;
         font-size: 11px;
         color: #089bfe;
+    }        
+    
+    .cards__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);              
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 100%;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        padding-top: 2rem;
+      }
+
+    .card__image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;  
+        object-fit: cover;
+        border-radius: 1rem;
+    }
+
+    .active-page {
+        border: 1px solid #0183ff;
+        padding: 2px 10px;
+        color: #0183ff;
+        border-radius: 5px;
     }
 
 `;

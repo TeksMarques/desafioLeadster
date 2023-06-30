@@ -11,7 +11,7 @@ export const NavBarContainer = styled.div`
 `;
 
 export const NavContainer = styled.div`
-  width: 50%;
+  width: 70%;
   margin-right: 20px;
   display: flex;
   flex-direction: row;
@@ -54,7 +54,7 @@ export const ButtonFilter = styled.select`
 `;
 
 export const Line = styled.hr`
-  width: 65%;
+  width: 80%;
   border: 1px solid #cbd6df;
   margin-top: 20px;
   display: flex;
