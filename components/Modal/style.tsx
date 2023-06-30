@@ -20,8 +20,9 @@ export const ButtonModal = styled.button`
   top: 3px;
   right: 3px;
   z-index: 10;  
-  padding: 2px;  
-  background-color: transparent;  
+  padding: 8px;  
+  background-color: transparent;
+  border: none; 
 `;
 
 export const CardDetailsContent = styled.div`
