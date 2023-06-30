@@ -1,54 +1,73 @@
 import React from "react";
-import ReactPlayer from "react-player";
-import { AiOutlineClose } from "react-icons/ai";
-import { Dialog } from "@headlessui/react";
-import { BsCloudDownload } from "react-icons/bs";
 
-const DownloadBtn = ({ title, containerStyles }) => {
-  return (
-    <div className={`btn__container ${containerStyles}`}>
-      <div className="btn__download-left">
-        <BsCloudDownload className="svg__download" />
-      </div>
-      <div className="btn__download-right">
-        <h2>{title}</h2>
-      </div>
-    </div>
-  );
-};
+import ReactPlayer from "react-player";
+import { GrClose } from "react-icons/gr";
+import { Dialog } from "@headlessui/react";
+
+import DownloadBtn from "./DownloadBtn";
+import {
+  ButtonModal,
+  CardDetailsContainer,
+  CardDetailsContent,
+  CardDetailsDescription,
+  CardDetailsTitle,
+  CardDetailsTitleSpan,
+  ModalBG,
+  Player,
+  TextDescription,
+  Line,
+  CardDetailsDescriptionP,
+  CardDetailsDownloads,
+  DownloadsContainer,
+} from "./style";
 
 const CardDetails = ({ isOpen, closeModal, card }) => {
   if (!isOpen) return null;
 
   return (
-    <Dialog open={true} onClose={closeModal}>
-      <div>
-        <button type="button" onClick={closeModal}>
-          <AiOutlineClose />
-        </button>
-        <div>
-          <h2>
-            <span>Webinar:</span> {card.title}
-          </h2>
-          <div>
-            <ReactPlayer url={card.link} width="100%" height="100%" />
-          </div>
-          <div>
-            <h4>Descrição</h4>
-            <div></div>
-            <p>{card.description}</p>
-          </div>
-          <div>
-            <h4>Downloads</h4>
-            <div></div>
-            <div>
-              <DownloadBtn title="Spreadsheet.xls" containerStyles="" />
-              <DownloadBtn title="Document.doc" containerStyles="" />
-              <DownloadBtn title="Presentation.ppt" containerStyles="" />
-            </div>
-          </div>
-        </div>
-      </div>
+    <Dialog className="relative z-50" open={true} onClose={closeModal}>
+      <ModalBG />
+      <CardDetailsContainer>
+        <Dialog.Panel className={"dialog__panel"}>
+          <ButtonModal type="button" onClick={closeModal}>
+            <GrClose />
+          </ButtonModal>
+          <CardDetailsContent>
+            <CardDetailsTitle>
+              <CardDetailsTitleSpan>Webinar: </CardDetailsTitleSpan>{" "}
+              {card.title}
+            </CardDetailsTitle>
+            <Player>
+              <ReactPlayer url={card.link} width="100%" height="100%" />
+            </Player>
+            <CardDetailsDescription>
+              <TextDescription>Descrição</TextDescription>
+              <Line />
+              <CardDetailsDescriptionP>
+                {card.description}
+              </CardDetailsDescriptionP>
+            </CardDetailsDescription>
+            <CardDetailsDownloads>
+              <TextDescription>Downloads</TextDescription>
+              <Line />
+              <DownloadsContainer>
+                <DownloadBtn
+                  title="Spreadsheet.xls"
+                  containerStyles="green__button"
+                />
+                <DownloadBtn
+                  title="Document.doc"
+                  containerStyles="blue__button"
+                />
+                <DownloadBtn
+                  title="Presentation.ppt"
+                  containerStyles="yellow__button"
+                />
+              </DownloadsContainer>
+            </CardDetailsDownloads>
+          </CardDetailsContent>
+        </Dialog.Panel>
+      </CardDetailsContainer>
     </Dialog>
   );
 };

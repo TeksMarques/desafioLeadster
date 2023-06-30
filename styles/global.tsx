@@ -9,7 +9,9 @@ const GlobalStyle = createGlobalStyle`
 
     html {
         font-family: 'Plus Jakarta Sans', sans-serif;
-    }    
+    }
+
+    // conteudo do header
 
     .header__asset {
         position: absolute;
@@ -31,6 +33,8 @@ const GlobalStyle = createGlobalStyle`
         font-weight: 900;
     }
 
+    // conteudo do navbar
+
     .nav__link {
         font-size: 13px;        
         margin-right: 8px;
@@ -50,6 +54,8 @@ const GlobalStyle = createGlobalStyle`
         font-size: 13px;
         margin-right: 8px;
     }
+
+    // conteudo da seção de informações
 
     .image__comparativos {
         width: 580px;
@@ -84,6 +90,8 @@ const GlobalStyle = createGlobalStyle`
         width: 72px;
         height: auto;
     }
+
+    // conteudo do footer
     
     .footer__logo {
         width: 200px;
@@ -127,7 +135,9 @@ const GlobalStyle = createGlobalStyle`
         text-decoration: none;
         font-size: 11px;
         color: #089bfe;
-    }        
+    }
+    
+    // conteudo do card
     
     .cards__container {
         display: grid;
@@ -151,11 +161,85 @@ const GlobalStyle = createGlobalStyle`
         border-radius: 1rem;
     }
 
-    .active-page {
-        border: 1px solid #0183ff;
-        padding: 2px 10px;
-        color: #0183ff;
-        border-radius: 5px;
+    // conteudo da Modal
+
+    .dialog__panel {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 110%;
+        max-width: 32rem;
+        max-height: 80vh;
+        background-color: #fff;
+        border-radius: 1rem;
+        overflowY: auto;
+        transform: none;
+        text-align: left;
+        overflow: hidden;        
+        gap: 1.3rem;
+        padding: 1.5rem 0 1.5rem 0;
+        box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.15);        
+        align-items: center;
+        border-top: solid;
+        border-color: #3b82f6;
+
+        transition-property: all;
+        transition-duration: 0.3s;  
+        transition-timing-function: ease;   
+        transition-delay: 0s;
+
+    }    
+
+    .btn__download-left {
+        padding: 2px 4px;
+       
+    }
+
+    .btn__download-right {
+        padding: 2px 4px;
+       
+    }
+
+    .green__button {
+        color: #008e72;
+        background-color: #c2f4ea;
+        cursor: pointer;
+      }
+      
+    .blue__button {
+        color: #007deb;
+        background-color: #c2e6ff;
+        cursor: pointer;
+    }
+      
+    .yellow__button {
+        color: #d9b112;
+        background-color: #fff8d0;
+        cursor: pointer;
+    }
+
+    .blue__button .btn__download-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #1769b076;
+        height: 100%;
+    }
+
+    .green__button .btn__download-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #008e7250;
+        height: 100%;
+    }
+
+    .yellow__button .btn__download-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #dfb3045e;
+        height: 100%;
     }
 
 `;
