@@ -55,6 +55,11 @@ export const PageContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 20px;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 10px; /* Reduza as margens laterais em dispositivos menores */
+  }
 `;
 
 export const Line = styled.hr`

@@ -10,6 +10,10 @@ export const SectionInfosContainer = styled.div`
     justify-content: center;
     background-color: #f0f8ff;
     position: relative;
+
+    @media screen and (max-width: 480px) {
+        flex-direction: column;
+    }
 `
 export const SectionInfosWrapper = styled.div`
     width: 100%;
@@ -30,6 +34,10 @@ export const SectionInfosText = styled.div`
     flex-direction: column;
     align-items: flex-start;
     padding-left: 1rem;
+
+    @media screen and (max-width: 480px) {
+        padding-top: 1rem;
+    }
     
 `
 
@@ -60,8 +68,7 @@ export const InfosRD = styled.div`
 export const ButtonSection = styled.button`
     background-color: #2c83fb;
     color: white;
-    border: 1px solid #2c83fb;
-    font-size: ;
+    border: 1px solid #2c83fb;    
     padding: 1rem 2rem;
     border-radius: 50px;
     font-weight: 500;

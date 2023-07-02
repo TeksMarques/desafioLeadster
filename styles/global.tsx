@@ -5,6 +5,8 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+        overflow-x: hidden;
+        
     }
 
     html {
@@ -18,7 +20,13 @@ const GlobalStyle = createGlobalStyle`
         top: 18px;        
         height: auto;        
         right: 1px;
-        width: 40px;
+        width: 40px;        
+
+        @media screen and (max-width: 480px) {
+            top: 8px;
+            right: 1px;
+            width: 30px;
+        }
     }
 
     .header__line {
@@ -47,6 +55,14 @@ const GlobalStyle = createGlobalStyle`
             color: #2c83fb;
             border: 1px solid #2c83fb;
         }
+
+        @media screen and (max-width: 480px) {
+            font-size: 11px;            
+            margin-right: 3px;
+            padding: 5px 10px;
+            min-width: 70px;
+            margin-bottom: 5px;
+        }
     }
 
     .nav__bold {
@@ -64,6 +80,13 @@ const GlobalStyle = createGlobalStyle`
        padding-top: 2rem;
        margin-left: 10rem;
        z-index: 1;
+
+         @media screen and (max-width: 480px) {
+            width: 350px;
+            height: auto;
+            margin-left: 50px;
+            padding-top: 1rem;
+         }
     }
 
     .image_grafico {
@@ -140,15 +163,17 @@ const GlobalStyle = createGlobalStyle`
     // conteudo do card
     
     .cards__container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);              
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;                      
         align-items: center;
         justify-content: center;
-        width: 50%;
+        width: 100%;
         height: 100%;
         margin-top: 8px;
         margin-bottom: 8px;
         padding-top: 2rem;
+        
       }
 
     .card__image {

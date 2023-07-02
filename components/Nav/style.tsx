@@ -7,7 +7,12 @@ export const NavBarContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
+
+  @media screen and (max-width: 480px) {
+    height: 100%;
+    padding-top: 20px;
+  }
 `;
 
 export const NavContainer = styled.div`
@@ -15,6 +20,13 @@ export const NavContainer = styled.div`
   margin-right: 20px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; 
+  
+  @media screen and (min-width: 1024px) {
+    justify-content: flex-start;    
+  }
+
 `;
 
 export const NavWrapper = styled.div`
@@ -22,11 +34,15 @@ export const NavWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
 `;
 
 export const NavButton = styled.button`
   background-color: #fff;
-  color: #333;
+  color: #333; 
 
   &.alterado {
     background-color: #2c83fb;
@@ -45,6 +61,10 @@ export const NavFilter = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
 `;
 
 export const ButtonFilter = styled.select`

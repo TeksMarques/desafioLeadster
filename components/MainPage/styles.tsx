@@ -39,6 +39,8 @@ export const CardImage = styled.div`
 
   position: relative;
   border-radius: 1rem;
+  
+  
 `;
 
 export const CardText = styled.div`
@@ -46,10 +48,14 @@ export const CardText = styled.div`
   width: 400px;
   position: relative;
   border-radius: 0.5rem;
+
+  
 `;
 
 export const Text = styled.h2`
   color: #333;
   font-weight: bold;
   padding: 1rem 1.5rem 1rem 1.5rem;
+
+  
 `;

@@ -7,13 +7,18 @@ export const PageContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 4rem;  
+
 `;
 
 export const PageText = styled.h2`
   font-size: 1.5rem;
   font-weight: bold;
   color: #333;
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.3rem;
+  }
 `;
 
 export const PageNumber = styled.button`
@@ -30,5 +35,9 @@ export const PageNumber = styled.button`
     padding: 2px 10px;
     color: #0183ff;
     border-radius: 5px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.2rem;
   }
 `;
