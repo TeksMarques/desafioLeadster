@@ -13,7 +13,7 @@ import PageCard from "../components/PageCard";
 
 const LandingPage = () => {
   const [data, setData] = useState([]);
-  const [currentPage, setCurrentPage] = useState(1);  
+  const [currentPage, setCurrentPage] = useState(1);
 
   const cardsPerPage = 9;
   const startIndex = (currentPage - 1) * cardsPerPage;
@@ -26,23 +26,22 @@ const LandingPage = () => {
 
   return (
     <PageContainer>
-      <Header data-testid="header"/> 
-      <NavBar data-testid="navbar"/>
+      <Header />
+      <NavBar />
       <div className="cards__container">
         {cardsToDisplay.map((card, index) => (
-          <Card card={card} key={`card-${index}`} data-testid="card"/>
+          <Card card={card} key={`card-${index}`} />
         ))}
       </div>
-      <Line data-testid="line"></Line>
+      <Line></Line>
       <PageCard
         cardsPerPage={cardsPerPage}
         totalCards={data.length}
         setCurrentPage={setCurrentPage}
         currentPage={currentPage}
-        data-testid="pagecard"
       />
-      <SectionInfos data-testid="sectioninfos" />
-      <Footer data-testid="footer"/>
+      <SectionInfos />
+      <Footer />
     </PageContainer>
   );
 };

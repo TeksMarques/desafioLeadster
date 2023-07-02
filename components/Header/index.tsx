@@ -25,10 +25,10 @@ const Header = () => {
           <HeaderTextTitle>Mais Conversão</HeaderTextTitle>
           <Image
             src="/images/asset-header.png"
-            alt="logo"
+            alt="asset-header"
             width={32}
             height={49}
-            className="header__asset"
+            className="header__asset"            
           />
           <Line />
         </HeaderTitle>

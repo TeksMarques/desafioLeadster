@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const HeaderContainer = styled.div`
+export const HeaderContainer = styled.div.attrs(() => ({
+  'data-testid': 'header-container',
+}))`
   width: 100vw;  
   padding-bottom: 40px;
   display: flex;
@@ -12,7 +14,9 @@ export const HeaderContainer = styled.div`
   }
 `;
 
-export const HeaderLogo = styled.div`
+export const HeaderLogo = styled.div.attrs(() => ({
+  'data-testid': 'header-logo',
+}))`
   margin: 30px;
   padding-top: 20px;
   display: flex;
@@ -116,7 +120,9 @@ export const Line = styled.div`
   margin-bottom: 15px;
 `;
 
-export const HeaderCTO = styled.h4`
+export const HeaderCTO = styled.h4.attrs(() => ({
+  'data-testid': 'header-cto',
+}))`
   font-size: 18px;
   font-weight: 600;
 
