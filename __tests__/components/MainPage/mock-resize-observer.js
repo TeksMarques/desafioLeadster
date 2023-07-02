@@ -4,5 +4,5 @@ class ResizeObserver {
     disconnect() {}
   }
   
-  export default ResizeObserver;
+export default ResizeObserver;
   

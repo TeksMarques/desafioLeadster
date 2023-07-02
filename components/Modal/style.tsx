@@ -52,7 +52,9 @@ export const CardDetailsTitleSpan = styled.span`
   color: #089bfe;
 `;
 
-export const Player = styled.div`
+export const Player = styled.div.attrs(() => ({
+  "data-testid": "player",
+  }))`
   height: 300px;
 
   @media (max-width: 768px) {

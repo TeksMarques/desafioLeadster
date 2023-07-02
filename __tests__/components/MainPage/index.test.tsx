@@ -39,7 +39,7 @@ describe("Card", () => {
     expect(screen.getByTestId("modal")).toBeInTheDocument();
 
     act(() => {
-        fireEvent.click(screen.getByTestId("close-modal"));
+        fireEvent.click(screen.getByTestId(""));
       });
     expect(screen.queryByTestId("modal")).not.toBeInTheDocument();
   });
