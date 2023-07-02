@@ -48,7 +48,9 @@ const LandingPage = () => {
 
 export default LandingPage;
 
-export const PageContainer = styled.div`
+export const PageContainer = styled.div.attrs({
+  "data-testid": "landing-page-container",
+  })`
   widht: 100vw;
   min-height: 100vh;
 
