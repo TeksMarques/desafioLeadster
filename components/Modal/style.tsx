@@ -6,7 +6,9 @@ export const ModalBG = styled.div`
   background-color: rgba(0, 0, 0, 0.5);
 `;
 
-export const CardDetailsContainer = styled.div`
+export const CardDetailsContainer = styled.div.attrs(() => ({
+  "data-testid": "modal",
+  }))`
   position: fixed;
   inset: 0px;
   overflowY: auto;
@@ -15,7 +17,9 @@ export const CardDetailsContainer = styled.div`
   align-items: center;
 `;
 
-export const ButtonModal = styled.button`  
+export const ButtonModal = styled.button.attrs(() => ({
+  "data-testid": "close-modal",
+  }))`  
   position: absolute;
   top: 3px;
   right: 3px;

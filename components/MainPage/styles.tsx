@@ -1,15 +1,17 @@
 import styled from "styled-components";
 
 export const OverlayBg = styled.div`
-  position: absolute;  
+  position: absolute;
   display: none;
-  z-index: 1;  
+  z-index: 1;
   height: 100%;
   width: 100%;
-  background-color: rgba(1, 131, 255, 0.5);  
+  background-color: rgba(1, 131, 255, 0.5);
 `;
 
-export const CardContainer = styled.div`
+export const CardContainer = styled.div.attrs(() => ({
+  "data-testid": "card-container",
+}))`
   position: relative;
   display: flex;  
   flex-direction: column;
@@ -39,8 +41,6 @@ export const CardImage = styled.div`
 
   position: relative;
   border-radius: 1rem;
-  
-  
 `;
 
 export const CardText = styled.div`
@@ -48,14 +48,10 @@ export const CardText = styled.div`
   width: 400px;
   position: relative;
   border-radius: 0.5rem;
-
-  
 `;
 
 export const Text = styled.h2`
   color: #333;
   font-weight: bold;
   padding: 1rem 1.5rem 1rem 1.5rem;
-
-  
 `;

@@ -25,7 +25,7 @@ const CardDetails = ({ isOpen, closeModal, card }) => {
   if (!isOpen) return null;
 
   return (
-    <Dialog className="relative z-50" open={true} onClose={closeModal}>
+    <Dialog className="relative z-50" open={true} onClose={closeModal} >
       <ModalBG />
       <CardDetailsContainer>
         <Dialog.Panel className={"dialog__panel"}>
