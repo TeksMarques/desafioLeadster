@@ -26,22 +26,23 @@ const LandingPage = () => {
 
   return (
     <PageContainer>
-      <Header />
-      <NavBar />
+      <Header data-testid="header"/> 
+      <NavBar data-testid="navbar"/>
       <div className="cards__container">
         {cardsToDisplay.map((card, index) => (
-          <Card card={card} key={`card-${index}`} />
+          <Card card={card} key={`card-${index}`} data-testid="card"/>
         ))}
       </div>
-      <Line></Line>
+      <Line data-testid="line"></Line>
       <PageCard
         cardsPerPage={cardsPerPage}
         totalCards={data.length}
         setCurrentPage={setCurrentPage}
         currentPage={currentPage}
+        data-testid="pagecard"
       />
-      <SectionInfos />
-      <Footer />
+      <SectionInfos data-testid="sectioninfos" />
+      <Footer data-testid="footer"/>
     </PageContainer>
   );
 };

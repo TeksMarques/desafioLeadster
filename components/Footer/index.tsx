@@ -100,6 +100,7 @@ const Footer = () => {
               className="footer__redes"
               href="https://www.linkedin.com/company/leadster-platform/"
               target="blank"
+              data-testid="linkedin-link"
             >
               <ImLinkedin2 />
             </Link>
@@ -107,6 +108,7 @@ const Footer = () => {
               className="footer__redes"
               href="https://www.facebook.com/leadsterplatform"
               target="blank"
+              data-testid="facebook-link"
             >
               <ImFacebook />
             </Link>
@@ -114,16 +116,17 @@ const Footer = () => {
               className="footer__redes"
               href="https://www.instagram.com/leadster.com.br/"
               target="blank"
+              data-testid="instagram-link"
             >
               <BsInstagram />
             </Link>
           </FooterSociais>
           <FooterContatos>
-            <TextContato className="footer__links">
+            <TextContato className="footer__links" id="email-info">
               <span className="header__bold">Email: </span>
               contato@leadster.com.br
             </TextContato>
-            <TextContato className="footer__links">
+            <TextContato className="footer__links" id="telefone-info">
               <span className="header__bold">Telefone: </span>
               (42) 98828-9851
             </TextContato>

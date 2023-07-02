@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const FooterContainer = styled.div`
+export const FooterContainer = styled.div.attrs(() => ({
+  'data-testid': 'footer-container',
+}))`
   display: flex;
   flex-direction: column;
   align-items: center;
