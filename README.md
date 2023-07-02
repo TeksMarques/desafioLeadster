@@ -67,7 +67,7 @@ Para rodar os testes dos components
 ```
   npm test ./components/nome-do-component/index.test.tsx
 ```
-# Link do Página 
+# Link da Página 
 
 https://teresa-marques-desafio-leadster.vercel.app/
 
