@@ -1,13 +1,15 @@
 import styled from "styled-components";
 
-export const NavBarContainer = styled.div`
+export const NavBarContainer = styled.div.attrs({
+  "data-testid": "nav-bar-container",
+})`
   width: 100vw;
   height: 80px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
 
   @media screen and (max-width: 480px) {
     height: 100%;
@@ -21,12 +23,11 @@ export const NavContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center; 
-  
-  @media screen and (min-width: 1024px) {
-    justify-content: flex-start;    
-  }
+  justify-content: center;
 
+  @media screen and (min-width: 1024px) {
+    justify-content: flex-start;
+  }
 `;
 
 export const NavWrapper = styled.div`
@@ -42,7 +43,7 @@ export const NavWrapper = styled.div`
 
 export const NavButton = styled.button`
   background-color: #fff;
-  color: #333; 
+  color: #333;
 
   &.alterado {
     background-color: #2c83fb;
